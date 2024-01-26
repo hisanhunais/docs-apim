@@ -491,7 +491,7 @@ curl -X GET "http://<HOST_NAME>:<PORT>/siddhi-apps/{app-name}" -H "accept: appli
 ### Sample curl command
 
 ``` java
-curl -X GET "https://localhost:9443/siddhi-apps/SiddhiTestApp" -H "accept: application/json" -u admin:admin -k
+curl -X GET "https://localhost:9443/siddhi-apps/TestSiddhiApp" -H "accept: application/json" -u admin:admin -k
 ```
 
 ### Sample output
