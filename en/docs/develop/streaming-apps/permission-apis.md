@@ -117,13 +117,13 @@ Returns the permission ID for the particular permission string
 ### curl command syntax
 
 ```java
-curl -X GET https://<HOST_NAME>:<PORT>/permissions/app/{appName}
+curl -X GET https://<HOST_NAME>:<PORT>/permissions/app/{appName} -k
 ```
 
 ### Sample curl command
 
 ```java
-curl -X GET https://localhost:9443/permissions/app/MON
+curl -X GET https://localhost:9443/permissions/app/MON -k
 ```
 
 ### Sample output
@@ -193,13 +193,13 @@ curl -X GET https://localhost:9443/permissions/app/MON
 ### curl command syntax
 
 ```java
-curl --location --request GET 'https://<host>:port/permissions/auth/<permission-string-id>/<user>'
+curl --location --request GET 'https://<host>:port/permissions/auth/<permission-string-id>/<user>' -k
 ```
 
 ### Sample curl command
 
 ```java
-curl --location --request GET 'https://localhost:9443/permissions/auth/f0c74633-2f07-3896-841a-154afb0c29da/admin'
+curl --location --request GET 'https://localhost:9443/permissions/auth/f0c74633-2f07-3896-841a-154afb0c29da/admin' -k
 ```
 
 ### Sample output
@@ -268,13 +268,13 @@ curl --location --request GET 'https://localhost:9443/permissions/auth/f0c74633-
 ### curl command syntax
 
 ```java
-curl -X DELETE https://<HOST_NAME>:<PORT>/permissions/{permissionID}
+curl -X DELETE https://<HOST_NAME>:<PORT>/permissions/{permissionID} -k
 ```
 
 ### Sample curl command
 
 ```java
-curl -X DELETE https://localhost:9443/permissions/e9687c6f-b5b2-3216-b3bd-82e7a8e14367
+curl -X DELETE https://localhost:9443/permissions/e9687c6f-b5b2-3216-b3bd-82e7a8e14367 -k
 ```
 
 ### Sample output
@@ -347,13 +347,13 @@ curl -X DELETE https://localhost:9443/permissions/e9687c6f-b5b2-3216-b3bd-82e7a8
 ### curl command syntax
 
 ```java
-curl -X GET https://<HOST_NAME>:<PORT>/permissions/{permissionID}/roles
+curl -X GET https://<HOST_NAME>:<PORT>/permissions/{permissionID}/roles -k
 ```
 
 ### Sample curl command
 
 ```java
-curl -X GET https://localhost:9443/permissions/8dc31fec-8364-3082-9f88-c7ca7d979873/roles
+curl -X GET https://localhost:9443/permissions/8dc31fec-8364-3082-9f88-c7ca7d979873/roles -k
 ```
 
 ### Sample output
@@ -422,13 +422,13 @@ curl -X GET https://localhost:9443/permissions/8dc31fec-8364-3082-9f88-c7ca7d979
 ### curl command syntax
 
 ```java
-curl -X POST https://<HOST_NAME>:<PORT>/permissions/revoke/{permissionID}
+curl -X POST https://<HOST_NAME>:<PORT>/permissions/revoke/{permissionID} -k
 ```
 
 ### Sample curl command
 
 ```java
-curl -X POST https://localhost:9443/permissions/revoke/8dc31fec-8364-3082-9f88-c7ca7d979873
+curl -X POST https://localhost:9443/permissions/revoke/8dc31fec-8364-3082-9f88-c7ca7d979873 -k
 ```
 
 ### Sample output
