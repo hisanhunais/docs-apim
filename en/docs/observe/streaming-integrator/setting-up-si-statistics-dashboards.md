@@ -17,29 +17,29 @@ Configure the Prometheus reporter in the Streaming Integrator in order to enable
 1. Open the `<SI_HOME>/conf/server/deployment.yaml` file.
 2. Set the `enabled` parameter in the `wso2.metrics` section to `true`, and update the other parameters in the section as shown below. You also need to add the `metrics.prometheus:` as shown.
 
-     ```
-     wso2.metrics:
-       # Enable Metrics
-       enabled: true
-       reporting:
-         console:
-           - # The name for the Console Reporter
-             name: Console
+    ```
+    wso2.metrics:
+      # Enable Metrics
+      enabled: true
+      reporting:
+        console:
+          - # The name for the Console Reporter
+            name: Console
     
-             # Enable Console Reporter
-             enabled: false
+            # Enable Console Reporter
+            enabled: false
     
-             # Polling Period in seconds.
-             # This is the period for polling metrics from the metric registry and printing in the console
-             pollingPeriod: 2
+            # Polling Period in seconds.
+            # This is the period for polling metrics from the metric registry and printing in the console
+            pollingPeriod: 2
     
-     metrics.prometheus:
-     reporting:
-       prometheus:
-         - name: prometheus
-           enabled: true
-           serverURL: "http://localhost:9005"
-     ```
+    metrics.prometheus:
+      reporting:
+        prometheus:
+          - name: prometheus
+            enabled: true
+            serverURL: "http://localhost:9005"
+    ```
 
 3. Enable statistics for the Prometheus reporter at the Siddhi application level.
    
